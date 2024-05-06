@@ -9,12 +9,12 @@ from sklearn.model_selection import train_test_split
 # Load the Iris dataset
 iris_data = load_iris()
 X_iris, y_iris = iris_data.data, iris_data.target
-X_iris_train, X_iris_test, y_iris_train, y_iris_test = train_test_split(X_iris, y_iris, test_size=0.2, random_state=42)
+X_iris_train, X_iris_test, y_iris_train, y_iris_test = train_test_split(X_iris, y_iris, test_size=0.25, random_state=42)
 
 # Load the Wine dataset
 wine_data = load_wine()
 X_wine, y_wine = wine_data.data, wine_data.target
-X_wine_train, X_wine_test, y_wine_train, y_wine_test = train_test_split(X_wine, y_wine, test_size=0.2, random_state=42)
+X_wine_train, X_wine_test, y_wine_train, y_wine_test = train_test_split(X_wine, y_wine, test_size=0.25, random_state=42)
 
 # K-means clustering on Iris dataset
 kmeans = KMeans(n_clusters=3, random_state=42)
